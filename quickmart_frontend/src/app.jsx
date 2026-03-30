@@ -5,7 +5,7 @@ import { useState, useEffect, useRef } from "react";
 //  Single file, role-based login
 // ════════════════════════════════════════════════════════
 
-const API = "const API = import.meta.env.VITE_API_URL //http://localhost:5000/api"; // ← change to your Render URL after deploy
+const API = "const API = import.meta.env.VITE_API_URL //https://quickmart-hi65.onrender.com"; // ← change to your Render URL after deploy
 
 // ─── STATIC DATA ─────────────────────────────────────────────────────────────
 const PRODUCTS = [
