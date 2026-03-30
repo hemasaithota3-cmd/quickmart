@@ -9,28 +9,28 @@ const API = "const API = import.meta.env.VITE_API_URL //http://localhost:5000/ap
 
 // ─── STATIC DATA ─────────────────────────────────────────────────────────────
 const PRODUCTS = [
-    { _id: "1", name: "Fresh Bananas", weight: "6 pcs", price: 29, mrp: 40, emoji: "🍌", category: "fruits", badge: "25% OFF", tag: "bestseller" },
-    { _id: "2", name: "Red Tomatoes", weight: "500 g", price: 18, mrp: 25, emoji: "🍅", category: "fruits", badge: "28% OFF" },
-    { _id: "3", name: "Baby Spinach", weight: "200 g", price: 35, mrp: 45, emoji: "🥬", category: "fruits", badge: "22% OFF", tag: "organic" },
-    { _id: "4", name: "Carrots Pack", weight: "500 g", price: 22, mrp: 30, emoji: "🥕", category: "fruits", badge: "27% OFF" },
-    { _id: "5", name: "Green Apples", weight: "4 pcs", price: 89, mrp: 120, emoji: "🍏", category: "fruits", badge: "26% OFF", tag: "fresh" },
-    { _id: "6", name: "Full Cream Milk", weight: "1 L", price: 68, mrp: 72, emoji: "🥛", category: "dairy", badge: "6% OFF", tag: "daily" },
-    { _id: "7", name: "Farm Eggs", weight: "12 pcs", price: 89, mrp: 99, emoji: "🥚", category: "dairy", badge: "10% OFF", tag: "fresh" },
-    { _id: "8", name: "Salted Butter", weight: "100 g", price: 55, mrp: 60, emoji: "🧈", category: "dairy", badge: "8% OFF" },
-    { _id: "9", name: "Lay's Classic", weight: "90 g", price: 35, mrp: 40, emoji: "🥔", category: "snacks", badge: "12% OFF" },
-    { _id: "10", name: "Dark Chocolate", weight: "100 g", price: 149, mrp: 180, emoji: "🍫", category: "snacks", badge: "17% OFF", tag: "premium" },
-    { _id: "11", name: "Almonds", weight: "200 g", price: 199, mrp: 249, emoji: "🥜", category: "snacks", badge: "20% OFF", tag: "healthy" },
-    { _id: "12", name: "Orange Juice", weight: "1 L", price: 99, mrp: 130, emoji: "🍊", category: "beverages", badge: "24% OFF" },
-    { _id: "13", name: "Green Tea", weight: "25 bags", price: 125, mrp: 150, emoji: "🍵", category: "beverages", badge: "17% OFF", tag: "wellness" },
-    { _id: "14", name: "Sparkling Water", weight: "500 ml", price: 45, mrp: 55, emoji: "💧", category: "beverages", badge: "18% OFF" },
-    { _id: "15", name: "Multigrain Bread", weight: "400 g", price: 55, mrp: 65, emoji: "🍞", category: "bakery", badge: "15% OFF", tag: "fresh baked" },
-    { _id: "16", name: "Croissants", weight: "4 pcs", price: 129, mrp: 160, emoji: "🥐", category: "bakery", badge: "19% OFF", tag: "fresh" },
-    { _id: "17", name: "Chicken Breast", weight: "500 g", price: 189, mrp: 220, emoji: "🍗", category: "meat", badge: "14% OFF", tag: "fresh cut" },
-    { _id: "18", name: "Prawns", weight: "250 g", price: 249, mrp: 299, emoji: "🦐", category: "meat", badge: "17% OFF", tag: "fresh" },
-    { _id: "19", name: "Shampoo", weight: "200 ml", price: 179, mrp: 220, emoji: "🧴", category: "personal", badge: "19% OFF" },
-    { _id: "20", name: "Dish Soap", weight: "500 ml", price: 89, mrp: 110, emoji: "🧼", category: "household", badge: "19% OFF" },
-    { _id: "21", name: "Ice Cream", weight: "500 ml", price: 149, mrp: 180, emoji: "🍦", category: "frozen", badge: "17% OFF", tag: "bestseller" },
-    { _id: "22", name: "Frozen Peas", weight: "500 g", price: 79, mrp: 99, emoji: "🫛", category: "frozen", badge: "20% OFF" },
+    { _id: "1", name: "Fresh Bananas", weight: "6 pcs", price: 29, mrp: 40, emoji: "🍌", imageUrl: "https://images.unsplash.com/photo-1603833665858-e61d17a86224?w=300&q=80", category: "fruits", badge: "25% OFF", tag: "bestseller" },
+    { _id: "2", name: "Red Tomatoes", weight: "500 g", price: 18, mrp: 25, emoji: "🍅", imageUrl: "https://images.unsplash.com/photo-1546094096-0df4bcaaa337?w=300&q=80", category: "fruits", badge: "28% OFF" },
+    { _id: "3", name: "Baby Spinach", weight: "200 g", price: 35, mrp: 45, emoji: "🥬", imageUrl: "https://images.unsplash.com/photo-1576045057995-568f588f82fb?w=300&q=80", category: "fruits", badge: "22% OFF", tag: "organic" },
+    { _id: "4", name: "Carrots Pack", weight: "500 g", price: 22, mrp: 30, emoji: "🥕", imageUrl: "https://images.unsplash.com/photo-1598170845058-32b9d6a5da37?w=300&q=80", category: "fruits", badge: "27% OFF" },
+    { _id: "5", name: "Green Apples", weight: "4 pcs", price: 89, mrp: 120, emoji: "🍏", imageUrl: "https://images.unsplash.com/photo-1619546813926-a78fa6372cd2?w=300&q=80", category: "fruits", badge: "26% OFF", tag: "fresh" },
+    { _id: "6", name: "Full Cream Milk", weight: "1 L", price: 68, mrp: 72, emoji: "🥛", imageUrl: "https://images.unsplash.com/photo-1563636619-e9143da7973b?w=300&q=80", category: "dairy", badge: "6% OFF", tag: "daily" },
+    { _id: "7", name: "Farm Eggs", weight: "12 pcs", price: 89, mrp: 99, emoji: "🥚", imageUrl: "https://images.unsplash.com/photo-1582722872445-44dc5f7e3c8f?w=300&q=80", category: "dairy", badge: "10% OFF", tag: "fresh" },
+    { _id: "8", name: "Salted Butter", weight: "100 g", price: 55, mrp: 60, emoji: "🧈", imageUrl: "https://images.unsplash.com/photo-1589985270826-4b7bb135bc9d?w=300&q=80", category: "dairy", badge: "8% OFF" },
+    { _id: "9", name: "Lay's Classic", weight: "90 g", price: 35, mrp: 40, emoji: "🥔", imageUrl: "https://images.unsplash.com/photo-1566478989037-eec170784d0b?w=300&q=80", category: "snacks", badge: "12% OFF" },
+    { _id: "10", name: "Dark Chocolate", weight: "100 g", price: 149, mrp: 180, emoji: "🍫", imageUrl: "https://images.unsplash.com/photo-1606312619070-d48b4c652a52?w=300&q=80", category: "snacks", badge: "17% OFF", tag: "premium" },
+    { _id: "11", name: "Almonds", weight: "200 g", price: 199, mrp: 249, emoji: "🥜", imageUrl: "https://images.unsplash.com/photo-1574184864703-3487b13f0edd?w=300&q=80", category: "snacks", badge: "20% OFF", tag: "healthy" },
+    { _id: "12", name: "Orange Juice", weight: "1 L", price: 99, mrp: 130, emoji: "🍊", imageUrl: "https://images.unsplash.com/photo-1621506289936-e5be37b10e39?w=300&q=80", category: "beverages", badge: "24% OFF" },
+    { _id: "13", name: "Green Tea", weight: "25 bags", price: 125, mrp: 150, emoji: "🍵", imageUrl: "https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=300&q=80", category: "beverages", badge: "17% OFF", tag: "wellness" },
+    { _id: "14", name: "Sparkling Water", weight: "500 ml", price: 45, mrp: 55, emoji: "💧", imageUrl: "https://images.unsplash.com/photo-1548839140-29a749e1cf4d?w=300&q=80", category: "beverages", badge: "18% OFF" },
+    { _id: "15", name: "Multigrain Bread", weight: "400 g", price: 55, mrp: 65, emoji: "🍞", imageUrl: "https://images.unsplash.com/photo-1509440159596-0249088772ff?w=300&q=80", category: "bakery", badge: "15% OFF", tag: "fresh baked" },
+    { _id: "16", name: "Croissants", weight: "4 pcs", price: 129, mrp: 160, emoji: "🥐", imageUrl: "https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=300&q=80", category: "bakery", badge: "19% OFF", tag: "fresh" },
+    { _id: "17", name: "Chicken Breast", weight: "500 g", price: 189, mrp: 220, emoji: "🍗", imageUrl: "https://images.unsplash.com/photo-1604503468506-a8da13d82791?w=300&q=80", category: "meat", badge: "14% OFF", tag: "fresh cut" },
+    { _id: "18", name: "Prawns", weight: "250 g", price: 249, mrp: 299, emoji: "🦐", imageUrl: "https://images.unsplash.com/photo-1565680018434-b513d5e5fd47?w=300&q=80", category: "meat", badge: "17% OFF", tag: "fresh" },
+    { _id: "19", name: "Shampoo", weight: "200 ml", price: 179, mrp: 220, emoji: "🧴", imageUrl: "https://images.unsplash.com/photo-1585232350158-db2f08a6b6a9?w=300&q=80", category: "personal", badge: "19% OFF" },
+    { _id: "20", name: "Dish Soap", weight: "500 ml", price: 89, mrp: 110, emoji: "🧼", imageUrl: "https://images.unsplash.com/photo-1583947215259-38e31be8751f?w=300&q=80", category: "household", badge: "19% OFF" },
+    { _id: "21", name: "Ice Cream", weight: "500 ml", price: 149, mrp: 180, emoji: "🍦", imageUrl: "https://images.unsplash.com/photo-1497034825429-c343d7c6a68f?w=300&q=80", category: "frozen", badge: "17% OFF", tag: "bestseller" },
+    { _id: "22", name: "Frozen Peas", weight: "500 g", price: 79, mrp: 99, emoji: "🫛", imageUrl: "https://images.unsplash.com/photo-1587049352851-8d4e89133924?w=300&q=80", category: "frozen", badge: "20% OFF" },
 ];
 
 const CATEGORIES = [
@@ -133,8 +133,8 @@ function RoleSelect({ onSelect }) {
 //  CUSTOMER APP
 // ════════════════════════════════════════════════════════
 function CustomerApp({ onExit, orders, setOrders }) {
-    const [user, setUser] = useState(null);
-    const [screen, setScreen] = useState("auth"); // auth|home|tracking|orderslist|profile
+    const [user, setUser] = useState({ name: "Guest", email: "" });
+    const [screen, setScreen] = useState("home"); // home|tracking|orderslist|profile
     const [cart, setCart] = useState({});
     const [cartOpen, setCartOpen] = useState(false);
     const [checkoutOpen, setCheckoutOpen] = useState(false);
@@ -185,7 +185,6 @@ function CustomerApp({ onExit, orders, setOrders }) {
     return (
         <div style={{ fontFamily: "'Nunito',sans-serif", background: "#F8F7FF", minHeight: "100vh" }}>
             <STYLES />
-            {screen === "auth" && <CustAuth onLogin={(u) => { setUser(u); setScreen("home"); }} onBack={onExit} />}
             {screen === "home" && <>
                 {/* Header */}
                 <header style={{ position: "sticky", top: 0, zIndex: 50, background: "white", boxShadow: "0 2px 16px rgba(124,58,237,0.07)", padding: "0 16px" }}>
@@ -346,11 +345,17 @@ function CustAuth({ onLogin, onBack }) {
 // ── Product Card ──────────────────────────────────────────────────────────────
 function ProdCard({ p, qty, onAdd, onRem }) {
     const tc = TAG_COLORS[p.tag] || null;
+    const imgSrc = p.imageUrl || null;
     return (
         <div className="hover-up fade" style={{ background: "white", borderRadius: 18, padding: "14px 12px 12px", border: "1px solid #F3F0FF", position: "relative", display: "flex", flexDirection: "column", gap: 8 }}>
             <div style={{ position: "absolute", top: 10, left: 10, background: "#EF4444", color: "white", fontSize: 10, fontWeight: 800, padding: "3px 7px", borderRadius: 6 }}>{p.badge}</div>
             {tc && <div style={{ position: "absolute", top: 10, right: 10, background: tc.bg, color: tc.color, fontSize: 9, fontWeight: 800, padding: "3px 7px", borderRadius: 6, textTransform: "uppercase" }}>{p.tag}</div>}
-            <div style={{ width: "100%", aspectRatio: "1", background: "#F8F7FF", borderRadius: 14, display: "flex", alignItems: "center", justifyContent: "center", fontSize: 44, marginTop: 8 }}>{p.emoji}</div>
+            <div style={{ width: "100%", aspectRatio: "1", background: "#F8F7FF", borderRadius: 14, display: "flex", alignItems: "center", justifyContent: "center", overflow: "hidden", marginTop: 8 }}>
+                {imgSrc ? (
+                    <img src={imgSrc} alt={p.name} style={{ width: "100%", height: "100%", objectFit: "cover", borderRadius: 14 }} onError={e => { e.currentTarget.style.display = "none"; e.currentTarget.nextSibling.style.display = "flex"; }} />
+                ) : null}
+                <div style={{ width: "100%", height: "100%", display: imgSrc ? "none" : "flex", alignItems: "center", justifyContent: "center", fontSize: 44 }}>{p.emoji}</div>
+            </div>
             <div><div style={{ fontWeight: 700, fontSize: 14, color: "#1F1235", lineHeight: 1.3 }}>{p.name}</div><div style={{ fontSize: 12, color: "#9CA3AF", marginTop: 2 }}>{p.weight}</div></div>
             <div style={{ display: "flex", alignItems: "baseline", gap: 6 }}>
                 <span style={{ fontFamily: "'Sora',sans-serif", fontWeight: 800, fontSize: 16, color: "#1F1235" }}>₹{p.price}</span>
@@ -396,7 +401,9 @@ function CartDrawer({ cartProds, cart, subtotal, deliveryFee, taxes, total, onAd
                             </div>
                             {cartProds.map(p => (
                                 <div key={p._id} style={{ display: "flex", alignItems: "center", gap: 12, padding: "14px 0", borderBottom: "1px solid #F9F8FF" }}>
-                                    <div style={{ width: 54, height: 54, background: "#F3F0FF", borderRadius: 14, display: "flex", alignItems: "center", justifyContent: "center", fontSize: 28, flexShrink: 0 }}>{p.emoji}</div>
+                                    <div style={{ width: 54, height: 54, background: "#F3F0FF", borderRadius: 14, overflow: "hidden", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 28, flexShrink: 0 }}>
+                                        {p.imageUrl ? <img src={p.imageUrl} alt={p.name} style={{ width: "100%", height: "100%", objectFit: "cover" }} onError={e => { e.currentTarget.style.display="none"; }} /> : p.emoji}
+                                    </div>
                                     <div style={{ flex: 1, minWidth: 0 }}>
                                         <div style={{ fontWeight: 700, fontSize: 14, color: "#1F1235" }}>{p.name}</div>
                                         <div style={{ fontSize: 12, color: "#9CA3AF", marginTop: 2 }}>{p.weight}</div>
@@ -812,7 +819,9 @@ function AdminApp({ onExit, orders, setOrders }) {
                                 {products.map(p => (
                                     <div key={p.id} style={{ background: "#161B27", border: "1px solid #1E2535", borderRadius: 14, padding: 14, opacity: p.active ? 1 : 0.5 }}>
                                         <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 10 }}>
-                                            <div style={{ width: 46, height: 46, borderRadius: 12, background: "#1A1F2E", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 26 }}>{p.emoji}</div>
+                                            <div style={{ width: 46, height: 46, borderRadius: 12, background: "#1A1F2E", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 26, overflow: "hidden", flexShrink: 0 }}>
+                                                {p.imageUrl ? <img src={p.imageUrl} alt={p.name} style={{ width: "100%", height: "100%", objectFit: "cover", borderRadius: 12 }} onError={e => { e.currentTarget.style.display="none"; }} /> : p.emoji}
+                                            </div>
                                             <div style={{ flex: 1, minWidth: 0 }}>
                                                 <div style={{ fontWeight: 700, fontSize: 13, color: "#E2E8F0", overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>{p.name}</div>
                                                 <div style={{ fontSize: 11, color: "#475569", textTransform: "capitalize" }}>{p.category} · {p.weight}</div>
@@ -847,7 +856,7 @@ function AdminApp({ onExit, orders, setOrders }) {
 function AdminLogin({ onLogin, onExit }) {
     const [form, setForm] = useState({ email: "", password: "" });
     const [err, setErr] = useState("");
-    const submit = () => { if (form.email === "admin@quikmart.in" && form.password === "admin123") { onLogin(); } else { setErr("Use admin@quikmart.in / admin123"); } };
+    const submit = () => { if (form.email === "hemasaithota3@gmail.com" && form.password === "1") { onLogin(); } else { setErr("admin email / 1"); } };
     return (
         <div style={{ minHeight: "100vh", background: "#0D1117", display: "flex", alignItems: "center", justifyContent: "center", fontFamily: "'DM Sans',sans-serif" }}>
             <ADMIN_STYLES />
@@ -858,12 +867,12 @@ function AdminLogin({ onLogin, onExit }) {
                     <div style={{ fontFamily: "'Space Grotesk',sans-serif", fontWeight: 800, fontSize: 22, color: "#F1F5F9" }}>Admin Dashboard</div>
                 </div>
                 <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
-                    <div><label style={{ fontSize: 11, fontWeight: 700, color: "#475569", display: "block", marginBottom: 5, textTransform: "uppercase", letterSpacing: "0.06em" }}>Email</label><input className="a-input" type="email" placeholder="admin@quikmart.in" value={form.email} onChange={e => setForm(f => ({ ...f, email: e.target.value }))} onKeyDown={e => e.key === "Enter" && submit()} /></div>
-                    <div><label style={{ fontSize: 11, fontWeight: 700, color: "#475569", display: "block", marginBottom: 5, textTransform: "uppercase", letterSpacing: "0.06em" }}>Password</label><input className="a-input" type="password" placeholder="••••••••" value={form.password} onChange={e => setForm(f => ({ ...f, password: e.target.value }))} onKeyDown={e => e.key === "Enter" && submit()} /></div>
+                    <div><label style={{ fontSize: 11, fontWeight: 700, color: "#475569", display: "block", marginBottom: 5, textTransform: "uppercase", letterSpacing: "0.06em" }}>Email</label><input className="a-input" type="email"  value={form.email} onChange={e => setForm(f => ({ ...f, email: e.target.value }))} onKeyDown={e => e.key === "Enter" && submit()} /></div>
+                    <div><label style={{ fontSize: 11, fontWeight: 700, color: "#475569", display: "block", marginBottom: 5, textTransform: "uppercase", letterSpacing: "0.06em" }}>Password</label><input className="a-input" type="password"  value={form.password} onChange={e => setForm(f => ({ ...f, password: e.target.value }))} onKeyDown={e => e.key === "Enter" && submit()} /></div>
                 </div>
                 {err && <div style={{ marginTop: 10, padding: "10px 14px", background: "rgba(239,68,68,0.1)", borderRadius: 10, fontSize: 13, color: "#F87171", fontWeight: 600 }}>⚠️ {err}</div>}
                 <button onClick={submit} style={{ width: "100%", marginTop: 18, padding: 14, borderRadius: 12, border: "none", background: "linear-gradient(135deg,#6366F1,#8B5CF6)", color: "white", fontFamily: "'Space Grotesk',sans-serif", fontWeight: 700, fontSize: 15, cursor: "pointer", boxShadow: "0 8px 24px rgba(99,102,241,0.3)" }}>Sign In →</button>
-                <div style={{ marginTop: 14, padding: "10px 12px", background: "#161B27", borderRadius: 10, fontSize: 12, color: "#475569" }}>🔑 <strong style={{ color: "#818CF8" }}>admin@quikmart.in</strong> / <strong style={{ color: "#818CF8" }}>admin123</strong></div>
+                <div style={{ marginTop: 14, padding: "10px 12px", background: "#161B27", borderRadius: 10, fontSize: 12, color: "#475569" }}>🔑 <strong style={{ color: "#818CF8" }}></strong> / <strong style={{ color: "#818CF8" }}>admin123</strong></div>
             </div>
         </div>
     );
@@ -968,9 +977,7 @@ function AdminOrderModal({ order, onClose, onUpdate }) {
 }
 
 function ProdFormModal({ product, onSave, onClose }) {
-    const EMOJIS = ["🍌", "🍅", "🥦", "🥕", "🍏", "🥬", "🥛", "🥚", "🧈", "🫙", "🥔", "🍫", "🥜", "🍿", "🍊", "🍵", "💧", "☕", "🍞", "🥐", "🍗", "🦐", "🧴", "🫧", "🧼", "🧹", "🫛", "🍦"];
-    const [form, setForm] = useState(product || { name: "", category: "fruits", price: "", mrp: "", weight: "", emoji: "🛒", stock: "", tag: "" });
-    const [picker, setPicker] = useState(false);
+    const [form, setForm] = useState(product || { name: "", category: "fruits", price: "", mrp: "", weight: "", emoji: "🛒", imageUrl: "", stock: "", tag: "" });
     const set = (k, v) => setForm(f => ({ ...f, [k]: v }));
     const disc = form.price && form.mrp ? Math.round((1 - form.price / form.mrp) * 100) : 0;
     const submit = () => { if (!form.name || !form.price || !form.mrp || !form.stock) return; onSave({ ...form, price: Number(form.price), mrp: Number(form.mrp), stock: Number(form.stock), badge: disc > 0 ? `${disc}% OFF` : "" }); };
@@ -984,11 +991,13 @@ function ProdFormModal({ product, onSave, onClose }) {
                 </div>
                 <div style={{ padding: 22, display: "flex", flexDirection: "column", gap: 14 }}>
                     <div>
-                        <label style={{ fontSize: 11, fontWeight: 700, color: "#475569", display: "block", marginBottom: 8, textTransform: "uppercase", letterSpacing: "0.06em" }}>Emoji</label>
-                        <button onClick={() => setPicker(s => !s)} style={{ width: 56, height: 56, borderRadius: 14, background: "#1A1F2E", border: "2px solid #2D3748", fontSize: 30, cursor: "pointer" }}>{form.emoji}</button>
-                        {picker && <div style={{ marginTop: 8, padding: 10, background: "#161B27", borderRadius: 10, border: "1px solid #1E2535", display: "flex", flexWrap: "wrap", gap: 5 }}>
-                            {EMOJIS.map(e => <button key={e} onClick={() => { set("emoji", e); setPicker(false); }} style={{ width: 34, height: 34, borderRadius: 8, background: form.emoji === e ? "rgba(99,102,241,0.2)" : "transparent", border: `1px solid ${form.emoji === e ? "#6366F1" : "transparent"}`, fontSize: 18, cursor: "pointer" }}>{e}</button>)}
-                        </div>}
+                        <label style={{ fontSize: 11, fontWeight: 700, color: "#475569", display: "block", marginBottom: 6, textTransform: "uppercase", letterSpacing: "0.06em" }}>Product Image URL</label>
+                        <input className="a-input" placeholder="https://example.com/image.jpg" value={form.imageUrl || ""} onChange={e => set("imageUrl", e.target.value)} />
+                        {form.imageUrl && (
+                            <div style={{ marginTop: 10, width: 80, height: 80, borderRadius: 12, overflow: "hidden", border: "1px solid #2D3748" }}>
+                                <img src={form.imageUrl} alt="preview" style={{ width: "100%", height: "100%", objectFit: "cover" }} onError={e => { e.currentTarget.src = ""; }} />
+                            </div>
+                        )}
                     </div>
                     <div><label style={{ fontSize: 11, fontWeight: 700, color: "#475569", display: "block", marginBottom: 6, textTransform: "uppercase", letterSpacing: "0.06em" }}>Product Name *</label><input className="a-input" placeholder="e.g. Fresh Bananas" value={form.name} onChange={e => set("name", e.target.value)} /></div>
                     <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 12 }}>
