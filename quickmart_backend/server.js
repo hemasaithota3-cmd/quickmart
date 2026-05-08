@@ -10,6 +10,7 @@ const { body, validationResult } = require("express-validator");
 const Stripe = require("stripe");
 
 const app = express();
+app.set("trust proxy", 1);
 const stripe = Stripe(process.env.STRIPE_SECRET_KEY);
 
 // ─── MIDDLEWARE ─────────────────────────────────────────────────────────────
